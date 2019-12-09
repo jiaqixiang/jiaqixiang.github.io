@@ -12,13 +12,17 @@
     
     <meta name="keywords" content="" />
     
-    <meta property="og:type" content="article">
+    <meta name="description" content="ES6 主要是为了解决 ES5 的先天不足，但是目前大多数浏览器的 JavaScript 是 ES5 版本，大多数高版本的浏览器也支持 ES6，不过只实现了 ES6 的部分特性和功能。  1.const 与 let使用var带来的麻烦:12345678function getClothing(isCold) &amp;#123;  if (isCold) &amp;#123;    var freezing =">
+<meta property="og:type" content="article">
 <meta property="og:title" content="ES6">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;09&#x2F;ES6&#x2F;index.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="ES6 主要是为了解决 ES5 的先天不足，但是目前大多数浏览器的 JavaScript 是 ES5 版本，大多数高版本的浏览器也支持 ES6，不过只实现了 ES6 的部分特性和功能。  1.const 与 let使用var带来的麻烦:12345678function getClothing(isCold) &amp;#123;  if (isCold) &amp;#123;    var freezing =">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-09T12:15:53.755Z">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;ES6.jpg">
+<meta property="og:updated_time" content="2019-12-09T12:28:38.651Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;ES6.jpg">
     
 
     
@@ -167,14 +171,32 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            
+            <p>ES6 主要是为了解决 ES5 的先天不足，但是目前大多数浏览器的 JavaScript 是 ES5 版本，大多数高版本的浏览器也支持 ES6，不过只实现了 ES6 的部分特性和功能。</p>
+<p><img src="/images/ES6.jpg" alt=""></p>
+<h2 id="1-const-与-let"><a href="#1-const-与-let" class="headerlink" title="1.const 与 let"></a>1.const 与 let</h2><h3 id="使用var带来的麻烦"><a href="#使用var带来的麻烦" class="headerlink" title="使用var带来的麻烦:"></a>使用var带来的麻烦:</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> getClothing(isCold) &#123;</span><br><span class="line">  <span class="keyword">if</span> (isCold) &#123;</span><br><span class="line">    var freezing = <span class="string">'Grab a jacket!'</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    var hot = <span class="string">'It'</span>s a shorts kind of day.<span class="string">';</span></span><br><span class="line"><span class="string">    console.log(freezing);</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>运行getClothing(false)后输出的是undefined,这是因为执行function函数之前,所有变量都会被提升, 提升到函数作用域顶部.</p>
+<p>let与const声明的变量解决了这种问题,因为他们是块级作用域, 在代码块(用{}表示)中使用let或const声明变量, 该变量会陷入暂时性死区直到该变量的声明被处理.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> getClothing(isCold) &#123;</span><br><span class="line">  <span class="keyword">if</span> (isCold) &#123;</span><br><span class="line">    const freezing = <span class="string">'Grab a jacket!'</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    const hot = <span class="string">'It'</span>s a shorts kind of day.<span class="string">';</span></span><br><span class="line"><span class="string">    console.log(freezing);</span></span><br><span class="line"><span class="string">  &#125;</span></span><br><span class="line"><span class="string">&#125;</span></span><br></pre></td></tr></table></figure>
+<p>运行getClothing(false)后输出的是ReferenceError: freezing is not defined,因为 freezing 没有在 else 语句、函数作用域或全局作用域内声明，所以抛出 ReferenceError。</p>
+<h2 id="模板字面量"><a href="#模板字面量" class="headerlink" title="模板字面量"></a>模板字面量</h2><h3 id="在ES6之前-将字符串连接到一起的方法是-或者concat-方法-如"><a href="#在ES6之前-将字符串连接到一起的方法是-或者concat-方法-如" class="headerlink" title="在ES6之前,将字符串连接到一起的方法是+或者concat()方法,如"></a>在ES6之前,将字符串连接到一起的方法是+或者concat()方法,如</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">const student = &#123;</span><br><span class="line">  name: <span class="string">'Richard Kalehoff'</span>,</span><br><span class="line">  guardian: <span class="string">'Mr. Kalehoff'</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">const teacher = &#123;</span><br><span class="line">  name: <span class="string">'Mrs. Wilson'</span>,</span><br><span class="line">  room: <span class="string">'N231'</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">let</span> message = student.name + <span class="string">' please see '</span> + teacher.name + <span class="string">' in '</span> + teacher.room + <span class="string">' to pick up your report card.'</span>;</span><br></pre></td></tr></table></figure>
+<p>模板字面量本质上是包含嵌入式表达式的字符串字面量.<br>模板字面量用倒引号 ( `` )（而不是单引号 ( ‘’ ) 或双引号( “” )）表示，可以包含用 ${expression} 表示的占位符</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> message = `<span class="variable">$&#123;student.name&#125;</span> please see <span class="variable">$&#123;teacher.name&#125;</span> <span class="keyword">in</span> <span class="variable">$&#123;teacher.room&#125;</span> to pick up your report card.`;</span><br></pre></td></tr></table></figure>
+
+<h2 id="解构"><a href="#解构" class="headerlink" title="解构"></a>解构</h2><p>在ES6中,可以使用解构从数组和对象提取值并赋值给独特的变量<br>解构数组的值:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const point = [10, 25, -34];</span><br><span class="line">const [x, y, z] = point;</span><br><span class="line">console.log(x, y, z);</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Prints: 10 25 -34</span><br></pre></td></tr></table></figure>
+<p>[]表示被解构的数组, x,y,z表示要将数组中的值存储在其中的变量, 在解构数组是, 还可以忽略值, 例如const[x,,z]=point,忽略y坐标.</p>
+<p>解构对象中的值:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">const gemstone = &#123;</span><br><span class="line">  <span class="built_in">type</span>: <span class="string">'quartz'</span>,</span><br><span class="line">  color: <span class="string">'rose'</span>,</span><br><span class="line">  karat: 21.29</span><br><span class="line">&#125;;</span><br><span class="line">const &#123;<span class="built_in">type</span>, color, karat&#125; = gemstone;</span><br><span class="line">console.log(<span class="built_in">type</span>, color, karat);</span><br></pre></td></tr></table></figure>
+<p>花括号 { } 表示被解构的对象，type、color 和 karat 表示要将对象中的属性存储到其中的变量</p>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="http://yoursite.com/2019/12/09/ES6/" data-id="ck3yegsdr00003oqn67ficd3z" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2019/12/09/ES6/" data-id="ck3yez5x20000f0qnfzv9huhy" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -245,15 +267,17 @@
             "name": "Jia qixiang"
         },
         "headline": "ES6",
-        "image": "http://yoursite.com",
+        "image": "http://yoursite.com/images/ES6.jpg",
         "keywords": "",
         "genre": "",
         "datePublished": "2019-12-09",
         "dateCreated": "2019-12-09",
         "dateModified": "2019-12-09",
         "url": "http://yoursite.com/2019/12/09/ES6/",
-        "description": "",
-        "wordCount": 1
+        "description": "ES6 主要是为了解决 ES5 的先天不足，但是目前大多数浏览器的 JavaScript 是 ES5 版本，大多数高版本的浏览器也支持 ES6，不过只实现了 ES6 的部分特性和功能。
+
+1.const 与 let使用var带来的麻烦:12345678function getClothing(isCold) &#123;  if (isCold) &#123;    var freezing = ",
+        "wordCount": 379
     }
 </script>
 
@@ -330,7 +354,7 @@
                             <a href="/2019/12/09/ES6/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/images/ES6.jpg)" alt="ES6" class="thumbnail-image"></span>
     
     
 </a>
