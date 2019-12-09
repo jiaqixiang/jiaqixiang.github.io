@@ -12,15 +12,15 @@
     
     <meta name="keywords" content="" />
     
-    <meta name="description" content="我们在做登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码才能登陆成功，但是也有一些其他验证码功能也在使用… 数字验证码效果 代码示例HTML123&amp;lt;input type=&quot;text&quot; name=&quot;phone&quot; id=&quot;phone&quot; value=&quot;&quot; placeholder=&quot;请输入手机号&quot; maxlength=&quot;11&quot; &#x2F;&amp;gt;&amp;lt;input">
+    <meta name="description" content="登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码登陆成功，但是也有一些其他验证方式。 数字验证码效果 代码示例HTML123&amp;lt;input type=&quot;text&quot; name=&quot;phone&quot; id=&quot;phone&quot; value=&quot;&quot; placeholder=&quot;请输入手机号&quot; maxlength=&quot;11&quot; &#x2F;&amp;gt;&amp;lt;input type=&quot;&quot; na">
 <meta property="og:type" content="article">
 <meta property="og:title" content="验证码功能">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;19&#x2F;articletest&#x2F;index.html">
 <meta property="og:site_name" content="Blog">
-<meta property="og:description" content="我们在做登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码才能登陆成功，但是也有一些其他验证码功能也在使用… 数字验证码效果 代码示例HTML123&amp;lt;input type=&quot;text&quot; name=&quot;phone&quot; id=&quot;phone&quot; value=&quot;&quot; placeholder=&quot;请输入手机号&quot; maxlength=&quot;11&quot; &#x2F;&amp;gt;&amp;lt;input">
+<meta property="og:description" content="登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码登陆成功，但是也有一些其他验证方式。 数字验证码效果 代码示例HTML123&amp;lt;input type=&quot;text&quot; name=&quot;phone&quot; id=&quot;phone&quot; value=&quot;&quot; placeholder=&quot;请输入手机号&quot; maxlength=&quot;11&quot; &#x2F;&amp;gt;&amp;lt;input type=&quot;&quot; na">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;yanzheng.jpg">
-<meta property="og:updated_time" content="2019-12-09T11:48:42.985Z">
+<meta property="og:updated_time" content="2019-12-09T12:00:44.009Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;yanzheng.jpg">
     
@@ -172,7 +172,7 @@
         
         <div class="article-entry" itemprop="articleBody">
             <p><img src="/images/yanzheng.jpg" alt=""></p>
-<p>我们在做登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码才能登陆成功，但是也有一些其他验证码功能也在使用…</p>
+<p>登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码登陆成功，但是也有一些其他验证方式。</p>
 <h2 id="数字验证码"><a href="#数字验证码" class="headerlink" title="数字验证码"></a>数字验证码</h2><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/images/num.png" alt=""></p>
 <h2 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"phone"</span> id=<span class="string">"phone"</span> value=<span class="string">""</span> placeholder=<span class="string">"请输入手机号"</span> maxlength=<span class="string">"11"</span> /&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">""</span> name=<span class="string">"verCode"</span> id=<span class="string">"verCode"</span> value=<span class="string">""</span> placeholder=<span class="string">"请输入验证码"</span> maxlength=<span class="string">"6"</span>/&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"button"</span> name=<span class="string">""</span> id=<span class="string">"verCodeBtn"</span> value=<span class="string">"获取验证码"</span>  onclick=<span class="string">"settime(this);"</span>/&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//验证码</span><br><span class="line">var counts = 60;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> setTime(val) &#123;</span><br><span class="line">    <span class="keyword">if</span>(counts == 0) &#123;</span><br><span class="line">        val.removeAttribute(<span class="string">"disabled"</span>);</span><br><span class="line">        val.value = <span class="string">"获取验证码"</span>;</span><br><span class="line">        counts = 60;</span><br><span class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        val.setAttribute(<span class="string">"disabled"</span>, <span class="literal">true</span>);</span><br><span class="line">        val.value = <span class="string">"重新发送（"</span> + counts + <span class="string">"）"</span>;</span><br><span class="line">        counts--;</span><br><span class="line">    &#125;</span><br><span class="line">    setTimeout(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        setTime(val);</span><br><span class="line">    &#125;, 1000);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -192,13 +192,16 @@
 <h3 id="CSS-1"><a href="#CSS-1" class="headerlink" title="CSS"></a>CSS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    .drag&#123;</span><br><span class="line">        width: 300px;</span><br><span class="line">        height: 40px;</span><br><span class="line">        line-height: 40px;</span><br><span class="line">        background-color: <span class="comment">#e8e8e8;</span></span><br><span class="line">        position: relative;</span><br><span class="line">        margin:0 auto;</span><br><span class="line">    &#125;</span><br><span class="line">    .<span class="built_in">bg</span>&#123;</span><br><span class="line">        width:40px;</span><br><span class="line">        height: 100%;</span><br><span class="line">        position: absolute;</span><br><span class="line">        background-color: <span class="comment">#75CDF9;</span></span><br><span class="line">    &#125;</span><br><span class="line">    .text&#123;</span><br><span class="line">        position: absolute;</span><br><span class="line">        width: 100%;</span><br><span class="line">        height: 100%;</span><br><span class="line">        text-align: center;</span><br><span class="line">        user-select: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .btn&#123;</span><br><span class="line">        width:40px;</span><br><span class="line">        height: 38px;</span><br><span class="line">        position: absolute;</span><br><span class="line">        border:1px solid <span class="comment">#ccc;</span></span><br><span class="line">        cursor: move;</span><br><span class="line">        font-family: <span class="string">"宋体"</span>;</span><br><span class="line">        text-align: center;</span><br><span class="line">        background-color: <span class="comment">#fff;</span></span><br><span class="line">        user-select: none;</span><br><span class="line">        color:<span class="comment">#666;</span></span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 
 <h3 id="JS-2"><a href="#JS-2" class="headerlink" title="JS"></a>JS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        //一、定义一个获取DOM元素的方法</span><br><span class="line">        var $ = <span class="keyword">function</span>(selector)&#123;</span><br><span class="line">                <span class="built_in">return</span>  document.querySelector(selector);</span><br><span class="line">            &#125;,</span><br><span class="line">            box = $(<span class="string">".drag"</span>),//容器</span><br><span class="line">            <span class="built_in">bg</span> = $(<span class="string">".bg"</span>),//背景</span><br><span class="line">            text = $(<span class="string">".text"</span>),//文字</span><br><span class="line">            btn = $(<span class="string">".btn"</span>),//滑块</span><br><span class="line">            success = <span class="literal">false</span>,//是否通过验证的标志</span><br><span class="line">            distance = box.offsetWidth - btn.offsetWidth;//滑动成功的宽度（距离）</span><br><span class="line"></span><br><span class="line">        //二、给滑块注册鼠标按下事件</span><br><span class="line">        btn.onmousedown = <span class="keyword">function</span>(e)&#123;</span><br><span class="line"></span><br><span class="line">            //1.鼠标按下之前必须清除掉后面设置的过渡属性</span><br><span class="line">            btn.style.transition = <span class="string">""</span>;</span><br><span class="line">            bg.style.transition =<span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">            //说明：clientX 事件属性会返回当事件被触发时，鼠标指针向对于浏览器页面(或客户区)的水平坐标。</span><br><span class="line"></span><br><span class="line">            //2.当滑块位于初始位置时，得到鼠标按下时的水平位置</span><br><span class="line">            var e = e || window.event;</span><br><span class="line">            var downX = e.clientX;</span><br><span class="line"></span><br><span class="line">            //三、给文档注册鼠标移动事件</span><br><span class="line">            document.onmousemove = <span class="keyword">function</span>(e)&#123;</span><br><span class="line"></span><br><span class="line">                var e = e || window.event;</span><br><span class="line">                //1.获取鼠标移动后的水平位置</span><br><span class="line">                var moveX = e.clientX;</span><br><span class="line"></span><br><span class="line">                //2.得到鼠标水平位置的偏移量（鼠标移动时的位置 - 鼠标按下时的位置）</span><br><span class="line">                var offsetX = moveX - downX;</span><br><span class="line"></span><br><span class="line">                //3.在这里判断一下：鼠标水平移动的距离 与 滑动成功的距离 之间的关系</span><br><span class="line">                <span class="keyword">if</span>( offsetX &gt; distance)&#123;</span><br><span class="line">                    offsetX = distance;//如果滑过了终点，就将它停留在终点位置</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>( offsetX &lt; 0)&#123;</span><br><span class="line">                    offsetX = 0;//如果滑到了起点的左侧，就将它重置为起点位置</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                //4.根据鼠标移动的距离来动态设置滑块的偏移量和背景颜色的宽度</span><br><span class="line">                btn.style.left = offsetX + <span class="string">"px"</span>;</span><br><span class="line">                bg.style.width = offsetX + <span class="string">"px"</span>;</span><br><span class="line"></span><br><span class="line">                //如果鼠标的水平移动距离 = 滑动成功的宽度</span><br><span class="line">                <span class="keyword">if</span>( offsetX == distance)&#123;</span><br><span class="line"></span><br><span class="line">                    //1.设置滑动成功后的样式</span><br><span class="line">                    text.innerHTML = <span class="string">"验证通过"</span>;</span><br><span class="line">                    text.style.color = <span class="string">"#fff"</span>;</span><br><span class="line">                    btn.innerHTML = <span class="string">"&amp;radic;"</span>;</span><br><span class="line">                    btn.style.color = <span class="string">"green"</span>;</span><br><span class="line">                    bg.style.backgroundColor = <span class="string">"lightgreen"</span>;</span><br><span class="line"></span><br><span class="line">                    //2.设置滑动成功后的状态</span><br><span class="line">                    success = <span class="literal">true</span>;</span><br><span class="line">                    //成功后，清除掉鼠标按下事件和移动事件（因为移动时并不会涉及到鼠标松开事件）</span><br><span class="line">                    btn.onmousedown = null;</span><br><span class="line">                    document.onmousemove = null;</span><br><span class="line"></span><br><span class="line">                    //3.成功解锁后的回调函数</span><br><span class="line">                    setTimeout(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">                        alert(<span class="string">'解锁成功！'</span>);</span><br><span class="line">                    &#125;,100);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            //四、给文档注册鼠标松开事件</span><br><span class="line">            document.onmouseup = <span class="keyword">function</span>(e)&#123;</span><br><span class="line"></span><br><span class="line">                //如果鼠标松开时，滑到了终点，则验证通过</span><br><span class="line">                <span class="keyword">if</span>(success)&#123;</span><br><span class="line">                    <span class="built_in">return</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    //反之，则将滑块复位（设置了1s的属性过渡效果）</span><br><span class="line">                    btn.style.left = 0;</span><br><span class="line">                    bg.style.width = 0;</span><br><span class="line">                    btn.style.transition = <span class="string">"left 1s ease"</span>;</span><br><span class="line">                    bg.style.transition = <span class="string">"width 1s ease"</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                //只要鼠标松开了，说明此时不需要拖动滑块了，那么就清除鼠标移动和松开事件。</span><br><span class="line">                document.onmousemove = null;</span><br><span class="line">                document.onmouseup = null;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https:baidu.com" target="_blank" rel="noopener">Baidu</a></p>
+
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="http://yoursite.com/2019/11/19/articletest/" data-id="ck3ycn97c00001oqnbtjo539j" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2019/11/19/articletest/" data-id="ck3yegsed00033oqnca8c7mnk" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -277,10 +280,10 @@
         "dateModified": "2019-12-09",
         "url": "http://yoursite.com/2019/11/19/articletest/",
         "description": "
-我们在做登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码才能登陆成功，但是也有一些其他验证码功能也在使用…
+登录验证的时候，最多的是短信验证码的方式，通过点击发送验证码，然后手机接收短信，填写验证码登陆成功，但是也有一些其他验证方式。
 数字验证码效果
-代码示例HTML123&lt;input type="text" name="phone" id="phone" value="" placeholder="请输入手机号" maxlength="11" /&gt;&lt;input",
-        "wordCount": 3768
+代码示例HTML123&lt;input type="text" name="phone" id="phone" value="" placeholder="请输入手机号" maxlength="11" /&gt;&lt;input type="" na",
+        "wordCount": 3773
     }
 </script>
 
@@ -329,6 +332,16 @@
         
 <nav id="article-nav">
     
+        <a href="/2019/12/09/fenye/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            element翻页记忆
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
     
         <a href="/2019/11/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
         <strong class="article-nav-caption">上一篇</strong>
@@ -350,6 +363,46 @@
         <h3 class="widget-title">最新文章</h3>
         <div class="widget">
             <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/12/09/ES6/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/12/09/ES6/" class="title">ES6</a></p>
+                            <p class="item-date"><time datetime="2019-12-09T12:15:53.000Z" itemprop="datePublished">2019-12-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/12/09/fenye/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/fenye.jpg)" alt="element翻页记忆" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/12/09/fenye/" class="title">element翻页记忆</a></p>
+                            <p class="item-date"><time datetime="2019-12-09T12:04:02.000Z" itemprop="datePublished">2019-12-09</time></p>
+                        </div>
+                    </li>
                 
                     <li>
                         
@@ -403,7 +456,7 @@
     <div class="widget-wrap widget-list">
         <h3 class="widget-title">归档</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">十二月 2019</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">十一月 2019</a><span class="archive-list-count">2</span></li></ul>
         </div>
     </div>
 
