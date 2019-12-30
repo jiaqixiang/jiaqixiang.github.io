@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+    
+
+    
+    <title>验证码功能 | 贾琦翔的博客</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="keywords" content="" />
+    
+    <meta name="description" content="登陆验证样式。 数字验证码效果 代码示例HTML123&amp;lt;input type=&quot;text&quot; name=&quot;phone&quot; id=&quot;phone&quot; value=&quot;&quot; placeholder=&quot;请输入手机号&quot; maxlength=&quot;11&quot; &#x2F;&amp;gt;&amp;lt;input type=&quot;&quot; name=&quot;verCode&quot; id=&quot;verCode&quot; value=&quot;&quot; placeholder=&quot;请输入验证码&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="验证码功能">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2018&#x2F;11&#x2F;09&#x2F;articletest&#x2F;index.html">
+<meta property="og:site_name" content="贾琦翔的博客">
+<meta property="og:description" content="登陆验证样式。 数字验证码效果 代码示例HTML123&amp;lt;input type=&quot;text&quot; name=&quot;phone&quot; id=&quot;phone&quot; value=&quot;&quot; placeholder=&quot;请输入手机号&quot; maxlength=&quot;11&quot; &#x2F;&amp;gt;&amp;lt;input type=&quot;&quot; name=&quot;verCode&quot; id=&quot;verCode&quot; value=&quot;&quot; placeholder=&quot;请输入验证码&quot;">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;yanzheng.jpg">
+<meta property="og:updated_time" content="2019-12-30T11:24:05.100Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;yanzheng.jpg">
+    
+
+    
+
+    
+        <link rel="icon" href="/css/images/favicon_1.ico" />
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    未分类
+    </h1>
+</div>
+
+                        <div class="main-body-content">
+                            <article id="post-articletest" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        验证码功能
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/2018/11/09/articletest/" class="article-date">
+         <time datetime="2018-11-09T11:38:20.000Z" itemprop="datePublished">2018-11-09</time>
+      </a>
+    </div>
+
+
+                
+
+                
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p><img src="/images/yanzheng.jpg" alt=""></p>
+<p>登陆验证样式。</p>
+<h2 id="数字验证码"><a href="#数字验证码" class="headerlink" title="数字验证码"></a>数字验证码</h2><h3 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h3><p><img src="/images/num.png" alt=""></p>
+<h2 id="代码示例"><a href="#代码示例" class="headerlink" title="代码示例"></a>代码示例</h2><h3 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"text"</span> name=<span class="string">"phone"</span> id=<span class="string">"phone"</span> value=<span class="string">""</span> placeholder=<span class="string">"请输入手机号"</span> maxlength=<span class="string">"11"</span> /&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">""</span> name=<span class="string">"verCode"</span> id=<span class="string">"verCode"</span> value=<span class="string">""</span> placeholder=<span class="string">"请输入验证码"</span> maxlength=<span class="string">"6"</span>/&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"button"</span> name=<span class="string">""</span> id=<span class="string">"verCodeBtn"</span> value=<span class="string">"获取验证码"</span>  onclick=<span class="string">"settime(this);"</span>/&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="JS"><a href="#JS" class="headerlink" title="JS"></a>JS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//验证码</span><br><span class="line">var counts = 60;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> setTime(val) &#123;</span><br><span class="line">    <span class="keyword">if</span>(counts == 0) &#123;</span><br><span class="line">        val.removeAttribute(<span class="string">"disabled"</span>);</span><br><span class="line">        val.value = <span class="string">"获取验证码"</span>;</span><br><span class="line">        counts = 60;</span><br><span class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        val.setAttribute(<span class="string">"disabled"</span>, <span class="literal">true</span>);</span><br><span class="line">        val.value = <span class="string">"重新发送（"</span> + counts + <span class="string">"）"</span>;</span><br><span class="line">        counts--;</span><br><span class="line">    &#125;</span><br><span class="line">    setTimeout(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        setTime(val);</span><br><span class="line">    &#125;, 1000);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="请求接口"><a href="#请求接口" class="headerlink" title="请求接口"></a>请求接口</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">   //获取验证码</span><br><span class="line">    $(<span class="string">"#verCodeBtn"</span>).click(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            url: <span class="string">""</span>,</span><br><span class="line">            data: &#123;&#125;,</span><br><span class="line">            <span class="built_in">type</span>: <span class="string">"post"</span>,</span><br><span class="line">            success: <span class="keyword">function</span>(data) &#123;</span><br><span class="line">                <span class="keyword">if</span>(JSON.parse(data).state === 404 || JSON.parse(data).state === 202) &#123;</span><br><span class="line">                    alert(<span class="string">"验证码发送失败"</span>)</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    alert(<span class="string">"验证码发送成功，请耐心等待"</span>)</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;,</span><br><span class="line">            error: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">                alert(<span class="string">"发送失败"</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="图形验证码"><a href="#图形验证码" class="headerlink" title="图形验证码"></a>图形验证码</h2><h3 id="效果-1"><a href="#效果-1" class="headerlink" title="效果"></a>效果</h3><p><img src="/images/tuxing.png" alt=""></p>
+<h2 id="代码示例-1"><a href="#代码示例-1" class="headerlink" title="代码示例"></a>代码示例</h2><h3 id="HTML-1"><a href="#HTML-1" class="headerlink" title="HTML"></a>HTML</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"code"</span>&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"text"</span> value=<span class="string">""</span> placeholder=<span class="string">"请输入验证码（不区分大小写）"</span> class=<span class="string">"input-val"</span>&gt;</span><br><span class="line">    &lt;canvas id=<span class="string">"canvas"</span> width=<span class="string">"100"</span> height=<span class="string">"30"</span>&gt;&lt;/canvas&gt;</span><br><span class="line">    &lt;button class=<span class="string">"btn"</span>&gt;提交&lt;/button&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    .input-val &#123;</span><br><span class="line">    width: 200px;</span><br><span class="line">    height: 32px;</span><br><span class="line">    border: 1px solid <span class="comment">#ddd;</span></span><br><span class="line">    box-sizing: border-box;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">#canvas &#123;</span></span><br><span class="line">    vertical-align: middle;</span><br><span class="line">    box-sizing: border-box;</span><br><span class="line">    border: 1px solid <span class="comment">#ddd;</span></span><br><span class="line">    cursor: pointer;</span><br><span class="line">    &#125;</span><br><span class="line">    .btn &#123;</span><br><span class="line">    display: block;</span><br><span class="line">    margin-top: 20px;</span><br><span class="line">    height: 32px;</span><br><span class="line">    width: 100px;</span><br><span class="line">    font-size: 16px;</span><br><span class="line">    color: <span class="comment">#fff;</span></span><br><span class="line">    background-color: <span class="comment">#457adb;</span></span><br><span class="line">    border: none;</span><br><span class="line">    border-radius: 50px;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="JS-1"><a href="#JS-1" class="headerlink" title="JS"></a>JS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"js/jquery-3.3.1.min.js"</span> &gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    $(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        var show_num = [];</span><br><span class="line">        draw(show_num);</span><br><span class="line"></span><br><span class="line">        $(<span class="string">"#canvas"</span>).on(<span class="string">'click'</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            draw(show_num);</span><br><span class="line">        &#125;)</span><br><span class="line">        $(<span class="string">".btn"</span>).on(<span class="string">'click'</span>,<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">            var val = $(<span class="string">".input-val"</span>).val().toLowerCase();</span><br><span class="line">            var num = show_num.join(<span class="string">""</span>);</span><br><span class="line">            <span class="keyword">if</span>(val==<span class="string">''</span>)&#123;</span><br><span class="line">                alert(<span class="string">'请输入验证码！'</span>);</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(val == num)&#123;</span><br><span class="line">                alert(<span class="string">'提交成功！'</span>);</span><br><span class="line">                $(<span class="string">".input-val"</span>).val(<span class="string">''</span>);</span><br><span class="line">                // draw(show_num);</span><br><span class="line"></span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                alert(<span class="string">'验证码错误！请重新输入！'</span>);</span><br><span class="line">                $(<span class="string">".input-val"</span>).val(<span class="string">''</span>);</span><br><span class="line">                // draw(show_num);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;)</span><br><span class="line"></span><br><span class="line">    //生成并渲染出验证码图形</span><br><span class="line">    <span class="keyword">function</span> draw(show_num) &#123;</span><br><span class="line">        var canvas_width=$(<span class="string">'#canvas'</span>).width();</span><br><span class="line">        var canvas_height=$(<span class="string">'#canvas'</span>).height();</span><br><span class="line">        var canvas = document.getElementById(<span class="string">"canvas"</span>);//获取到canvas的对象，演员</span><br><span class="line">        var context = canvas.getContext(<span class="string">"2d"</span>);//获取到canvas画图的环境，演员表演的舞台</span><br><span class="line">        canvas.width = canvas_width;</span><br><span class="line">        canvas.height = canvas_height;</span><br><span class="line">        var sCode = <span class="string">"a,b,c,d,e,f,g,h,i,j,k,m,n,p,q,r,s,t,u,v,w,x,y,z,A,B,C,E,F,G,H,J,K,L,M,N,P,Q,R,S,T,W,X,Y,Z,1,2,3,4,5,6,7,8,9,0"</span>;</span><br><span class="line">        var aCode = sCode.split(<span class="string">","</span>);</span><br><span class="line">        var aLength = aCode.length;//获取到数组的长度</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (var i = 0; i &lt; 4; i++) &#123;  //这里的<span class="keyword">for</span>循环可以控制验证码位数（如果想显示6位数，4改成6即可）</span><br><span class="line">            var j = Math.floor(Math.random() * aLength);//获取到随机的索引值</span><br><span class="line">            // var deg = Math.random() * 30 * Math.PI / 180;//产生0~30之间的随机弧度</span><br><span class="line">            var deg = Math.random() - 0.5; //产生一个随机弧度</span><br><span class="line">            var txt = aCode[j];//得到随机的一个内容</span><br><span class="line">            show_num[i] = txt.toLowerCase();</span><br><span class="line">            var x = 10 + i * 20;//文字在canvas上的x坐标</span><br><span class="line">            var y = 20 + Math.random() * 8;//文字在canvas上的y坐标</span><br><span class="line">            context.font = <span class="string">"bold 23px 微软雅黑"</span>;</span><br><span class="line"></span><br><span class="line">            context.translate(x, y);</span><br><span class="line">            context.rotate(deg);</span><br><span class="line"></span><br><span class="line">            context.fillStyle = randomColor();</span><br><span class="line">            context.fillText(txt, 0, 0);</span><br><span class="line"></span><br><span class="line">            context.rotate(-deg);</span><br><span class="line">            context.translate(-x, -y);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (var i = 0; i &lt;= 5; i++) &#123; //验证码上显示线条</span><br><span class="line">            context.strokeStyle = randomColor();</span><br><span class="line">            context.beginPath();</span><br><span class="line">            context.moveTo(Math.random() * canvas_width, Math.random() * canvas_height);</span><br><span class="line">            context.lineTo(Math.random() * canvas_width, Math.random() * canvas_height);</span><br><span class="line">            context.stroke();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (var i = 0; i &lt;= 30; i++) &#123; //验证码上显示小点</span><br><span class="line">            context.strokeStyle = randomColor();</span><br><span class="line">            context.beginPath();</span><br><span class="line">            var x = Math.random() * canvas_width;</span><br><span class="line">            var y = Math.random() * canvas_height;</span><br><span class="line">            context.moveTo(x, y);</span><br><span class="line">            context.lineTo(x + 1, y + 1);</span><br><span class="line">            context.stroke();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //得到随机的颜色值</span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">randomColor</span></span>() &#123;</span><br><span class="line">        var r = Math.floor(Math.random() * 256);</span><br><span class="line">        var g = Math.floor(Math.random() * 256);</span><br><span class="line">        var b = Math.floor(Math.random() * 256);</span><br><span class="line">        <span class="built_in">return</span> <span class="string">"rgb("</span> + r + <span class="string">","</span> + g + <span class="string">","</span> + b + <span class="string">")"</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="滑动验证码"><a href="#滑动验证码" class="headerlink" title="滑动验证码"></a>滑动验证码</h2><h3 id="效果-2"><a href="#效果-2" class="headerlink" title="效果"></a>效果</h3><p><img src="/images/huadong.png" alt=""></p>
+<h2 id="代码示例-2"><a href="#代码示例-2" class="headerlink" title="代码示例"></a>代码示例</h2><h3 id="HTML-2"><a href="#HTML-2" class="headerlink" title="HTML"></a>HTML</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=<span class="string">"drag"</span>&gt;</span><br><span class="line">    &lt;div class=<span class="string">"bg"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;div class=<span class="string">"text"</span> onselectstart=<span class="string">"return false;"</span>&gt;请拖动滑块解锁&lt;/div&gt;</span><br><span class="line">    &lt;div class=<span class="string">"btn"</span>&gt;&amp;gt;&amp;gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="CSS-1"><a href="#CSS-1" class="headerlink" title="CSS"></a>CSS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    .drag&#123;</span><br><span class="line">        width: 300px;</span><br><span class="line">        height: 40px;</span><br><span class="line">        line-height: 40px;</span><br><span class="line">        background-color: <span class="comment">#e8e8e8;</span></span><br><span class="line">        position: relative;</span><br><span class="line">        margin:0 auto;</span><br><span class="line">    &#125;</span><br><span class="line">    .<span class="built_in">bg</span>&#123;</span><br><span class="line">        width:40px;</span><br><span class="line">        height: 100%;</span><br><span class="line">        position: absolute;</span><br><span class="line">        background-color: <span class="comment">#75CDF9;</span></span><br><span class="line">    &#125;</span><br><span class="line">    .text&#123;</span><br><span class="line">        position: absolute;</span><br><span class="line">        width: 100%;</span><br><span class="line">        height: 100%;</span><br><span class="line">        text-align: center;</span><br><span class="line">        user-select: none;</span><br><span class="line">    &#125;</span><br><span class="line">    .btn&#123;</span><br><span class="line">        width:40px;</span><br><span class="line">        height: 38px;</span><br><span class="line">        position: absolute;</span><br><span class="line">        border:1px solid <span class="comment">#ccc;</span></span><br><span class="line">        cursor: move;</span><br><span class="line">        font-family: <span class="string">"宋体"</span>;</span><br><span class="line">        text-align: center;</span><br><span class="line">        background-color: <span class="comment">#fff;</span></span><br><span class="line">        user-select: none;</span><br><span class="line">        color:<span class="comment">#666;</span></span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="JS-2"><a href="#JS-2" class="headerlink" title="JS"></a>JS</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">        //一、定义一个获取DOM元素的方法</span><br><span class="line">        var $ = <span class="keyword">function</span>(selector)&#123;</span><br><span class="line">                <span class="built_in">return</span>  document.querySelector(selector);</span><br><span class="line">            &#125;,</span><br><span class="line">            box = $(<span class="string">".drag"</span>),//容器</span><br><span class="line">            <span class="built_in">bg</span> = $(<span class="string">".bg"</span>),//背景</span><br><span class="line">            text = $(<span class="string">".text"</span>),//文字</span><br><span class="line">            btn = $(<span class="string">".btn"</span>),//滑块</span><br><span class="line">            success = <span class="literal">false</span>,//是否通过验证的标志</span><br><span class="line">            distance = box.offsetWidth - btn.offsetWidth;//滑动成功的宽度（距离）</span><br><span class="line"></span><br><span class="line">        //二、给滑块注册鼠标按下事件</span><br><span class="line">        btn.onmousedown = <span class="keyword">function</span>(e)&#123;</span><br><span class="line"></span><br><span class="line">            //1.鼠标按下之前必须清除掉后面设置的过渡属性</span><br><span class="line">            btn.style.transition = <span class="string">""</span>;</span><br><span class="line">            bg.style.transition =<span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">            //说明：clientX 事件属性会返回当事件被触发时，鼠标指针向对于浏览器页面(或客户区)的水平坐标。</span><br><span class="line"></span><br><span class="line">            //2.当滑块位于初始位置时，得到鼠标按下时的水平位置</span><br><span class="line">            var e = e || window.event;</span><br><span class="line">            var downX = e.clientX;</span><br><span class="line"></span><br><span class="line">            //三、给文档注册鼠标移动事件</span><br><span class="line">            document.onmousemove = <span class="keyword">function</span>(e)&#123;</span><br><span class="line"></span><br><span class="line">                var e = e || window.event;</span><br><span class="line">                //1.获取鼠标移动后的水平位置</span><br><span class="line">                var moveX = e.clientX;</span><br><span class="line"></span><br><span class="line">                //2.得到鼠标水平位置的偏移量（鼠标移动时的位置 - 鼠标按下时的位置）</span><br><span class="line">                var offsetX = moveX - downX;</span><br><span class="line"></span><br><span class="line">                //3.在这里判断一下：鼠标水平移动的距离 与 滑动成功的距离 之间的关系</span><br><span class="line">                <span class="keyword">if</span>( offsetX &gt; distance)&#123;</span><br><span class="line">                    offsetX = distance;//如果滑过了终点，就将它停留在终点位置</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>( offsetX &lt; 0)&#123;</span><br><span class="line">                    offsetX = 0;//如果滑到了起点的左侧，就将它重置为起点位置</span><br><span class="line">                &#125;</span><br><span class="line"></span><br><span class="line">                //4.根据鼠标移动的距离来动态设置滑块的偏移量和背景颜色的宽度</span><br><span class="line">                btn.style.left = offsetX + <span class="string">"px"</span>;</span><br><span class="line">                bg.style.width = offsetX + <span class="string">"px"</span>;</span><br><span class="line"></span><br><span class="line">                //如果鼠标的水平移动距离 = 滑动成功的宽度</span><br><span class="line">                <span class="keyword">if</span>( offsetX == distance)&#123;</span><br><span class="line"></span><br><span class="line">                    //1.设置滑动成功后的样式</span><br><span class="line">                    text.innerHTML = <span class="string">"验证通过"</span>;</span><br><span class="line">                    text.style.color = <span class="string">"#fff"</span>;</span><br><span class="line">                    btn.innerHTML = <span class="string">"&amp;radic;"</span>;</span><br><span class="line">                    btn.style.color = <span class="string">"green"</span>;</span><br><span class="line">                    bg.style.backgroundColor = <span class="string">"lightgreen"</span>;</span><br><span class="line"></span><br><span class="line">                    //2.设置滑动成功后的状态</span><br><span class="line">                    success = <span class="literal">true</span>;</span><br><span class="line">                    //成功后，清除掉鼠标按下事件和移动事件（因为移动时并不会涉及到鼠标松开事件）</span><br><span class="line">                    btn.onmousedown = null;</span><br><span class="line">                    document.onmousemove = null;</span><br><span class="line"></span><br><span class="line">                    //3.成功解锁后的回调函数</span><br><span class="line">                    setTimeout(<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">                        alert(<span class="string">'解锁成功！'</span>);</span><br><span class="line">                    &#125;,100);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            //四、给文档注册鼠标松开事件</span><br><span class="line">            document.onmouseup = <span class="keyword">function</span>(e)&#123;</span><br><span class="line"></span><br><span class="line">                //如果鼠标松开时，滑到了终点，则验证通过</span><br><span class="line">                <span class="keyword">if</span>(success)&#123;</span><br><span class="line">                    <span class="built_in">return</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    //反之，则将滑块复位（设置了1s的属性过渡效果）</span><br><span class="line">                    btn.style.left = 0;</span><br><span class="line">                    bg.style.width = 0;</span><br><span class="line">                    btn.style.transition = <span class="string">"left 1s ease"</span>;</span><br><span class="line">                    bg.style.transition = <span class="string">"width 1s ease"</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                //只要鼠标松开了，说明此时不需要拖动滑块了，那么就清除鼠标移动和松开事件。</span><br><span class="line">                document.onmousemove = null;</span><br><span class="line">                document.onmouseup = null;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https:baidu.com" target="_blank" rel="noopener">Baidu</a></p>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2018/11/09/articletest/" data-id="ck4sc5rd30006pgqngetdfykm" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Jia qixiang"
+        },
+        "headline": "验证码功能",
+        "image": "http://yoursite.com/images/yanzheng.jpg",
+        "keywords": "",
+        "genre": "",
+        "datePublished": "2018-11-09",
+        "dateCreated": "2018-11-09",
+        "dateModified": "2019-12-30",
+        "url": "http://yoursite.com/2018/11/09/articletest/",
+        "description": "
+登陆验证样式。
+数字验证码效果
+代码示例HTML123&lt;input type="text" name="phone" id="phone" value="" placeholder="请输入手机号" maxlength="11" /&gt;&lt;input type="" name="verCode" id="verCode" value="" placeholder="请输入验证码" ",
+        "wordCount": 3773
+    }
+</script>
+
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+
+    
+    </section>
+
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/jiaqixiang" target="_blank" rel="noopener">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="https://weibo.com/5365772627/profile?topnav=1&wvr=6" target="_blank" rel="noopener">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+        <a href="/2019/03/01/reClick/" id="article-nav-newer" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">下一篇</strong>
+        <p class="article-nav-title">
+        
+            reClick
+        
+        </p>
+        <i class="icon fa fa-chevron-right" id="icon-chevron-right"></i>
+    </a>
+    
+    
+        <a href="/2018/08/30/Date/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Date</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/05/03/rsa/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/rsa.jpg)" alt="rsa" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/05/03/rsa/" class="title">rsa</a></p>
+                            <p class="item-date"><time datetime="2019-05-03T11:04:41.000Z" itemprop="datePublished">2019-05-03</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/04/05/fenye/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/fenye.jpg)" alt="element翻页记忆" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/04/05/fenye/" class="title">element翻页记忆</a></p>
+                            <p class="item-date"><time datetime="2019-04-05T12:04:02.000Z" itemprop="datePublished">2019-04-05</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2019/03/01/reClick/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/reClick.jpg)" alt="reClick" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2019/03/01/reClick/" class="title">reClick</a></p>
+                            <p class="item-date"><time datetime="2019-03-01T10:51:11.000Z" itemprop="datePublished">2019-03-01</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/11/09/articletest/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/yanzheng.jpg)" alt="验证码功能" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/11/09/articletest/" class="title">验证码功能</a></p>
+                            <p class="item-date"><time datetime="2018-11-09T11:38:20.000Z" itemprop="datePublished">2018-11-09</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2018/08/30/Date/" class="thumbnail">
+    
+    
+        <span style="background-image:url(/images/timg.jpg)" alt="Date" class="thumbnail-image"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2018/08/30/Date/" class="title">Date</a></p>
+                            <p class="item-date"><time datetime="2018-08-30T10:39:18.000Z" itemprop="datePublished">2018-08-30</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">三月 2019</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">十一月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/07/">七月 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">四月 2018</a><span class="archive-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+
+            
+                
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io" target="_blank" rel="noopener">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;" target="_blank" rel="noopener"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2019 Jia qixiang</p>
+                
+                <p>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>. Theme by <a href="https://github.com/ppoffice" target="_blank">PPOffice</a></p>
+                
+            </div>
+            <div class="footer-plugins">
+              
+    
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'http://yoursite.com/2018/11/09/articletest/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+    
+
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>

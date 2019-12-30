@@ -6,16 +6,23 @@
     
 
     
-    <title>归档: 2019 | 贾琦翔的博客</title>
+    <title>rsa | 贾琦翔的博客</title>
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta property="og:type" content="website">
-<meta property="og:title" content="贾琦翔的博客">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;2019&#x2F;index.html">
+    <meta name="keywords" content="" />
+    
+    <meta name="description" content="vue相关的rsa加密,项目需求,留作回顾.  vue组件引入1import &amp;#123; JSEncrypt &amp;#125; from &amp;apos;jsencrypt&amp;apos;;  方法内使用12345let publicKey = asdfsafdadfafasjdhfasfd &#x2F;&#x2F; 从后台获取公钥，这里省略，直接赋值let encryptor = new JSEncrypt()  &#x2F;&#x2F; 新建JSEncrypt对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="rsa">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;05&#x2F;03&#x2F;rsa&#x2F;index.html">
 <meta property="og:site_name" content="贾琦翔的博客">
+<meta property="og:description" content="vue相关的rsa加密,项目需求,留作回顾.  vue组件引入1import &amp;#123; JSEncrypt &amp;#125; from &amp;apos;jsencrypt&amp;apos;;  方法内使用12345let publicKey = asdfsafdadfafasjdhfasfd &#x2F;&#x2F; 从后台获取公钥，这里省略，直接赋值let encryptor = new JSEncrypt()  &#x2F;&#x2F; 新建JSEncrypt对">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;rsa.jpg">
+<meta property="og:updated_time" content="2019-12-30T11:24:47.719Z">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;yoursite.com&#x2F;images&#x2F;rsa.jpg">
     
 
     
@@ -118,178 +125,157 @@
                         <div class="main-body-header">
     <h1 class="header">
     
-    <i class="icon fa fa-archive"></i>归档: 2019
+    未分类
     </h1>
 </div>
 
                         <div class="main-body-content">
-                            
-
-    
-    
+                            <article id="post-rsa" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
         
-        
-        <section class="archives-wrap">
-            <div class="archive-year-wrap">
-                <a href="/archives/2019" class="archive-year"><i class="icon fa fa-calendar-o"></i>2019</a>
-            </div>
-            <div class="archives">
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/05/03/rsa/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/rsa.jpg)" alt="rsa" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/05/03/rsa/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-05-03T11:04:41.000Z" itemprop="datePublished">2019-05-03</time></div>
-        </div>
-        
+            <header class="article-header">
+                
     
         <h1 class="article-title" itemprop="name">
-        <a href="/2019/05/03/rsa/">rsa</a>
+        rsa
         </h1>
     
 
-        <p class="article-excerpt">
-            vue相关的rsa加密,项目需求,留作回顾.
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+      <i class="fa fa-calendar"></i>
+      <a href="/2019/05/03/rsa/" class="article-date">
+         <time datetime="2019-05-03T11:04:41.000Z" itemprop="datePublished">2019-05-03</time>
+      </a>
+    </div>
+
+
+                
+
+                
+                
+
+                
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <p>vue相关的rsa加密,项目需求,留作回顾.</p>
+<p><img src="/images/rsa.jpg" alt=""></p>
+<h3 id="vue组件引入"><a href="#vue组件引入" class="headerlink" title="vue组件引入"></a>vue组件引入</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#123; JSEncrypt &#125; from <span class="string">'jsencrypt'</span>;</span><br></pre></td></tr></table></figure>
+
+<h3 id="方法内使用"><a href="#方法内使用" class="headerlink" title="方法内使用"></a>方法内使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> publicKey = asdfsafdadfafasjdhfasfd // 从后台获取公钥，这里省略，直接赋值</span><br><span class="line"></span><br><span class="line"><span class="built_in">let</span> encryptor = new JSEncrypt()  // 新建JSEncrypt对象</span><br><span class="line">encryptor.setPublicKey(publicKey)  // 设置公钥</span><br><span class="line"><span class="built_in">let</span> rsaPassWord = encryptor.encrypt(password)  // 对密码进行加密</span><br></pre></td></tr></table></figure>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="http://yoursite.com/2019/05/03/rsa/" data-id="ck4sc5rcf0005pgqn0g7jduy3" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "author": {
+            "@type": "Person",
+            "name": "Jia qixiang"
+        },
+        "headline": "rsa",
+        "image": "http://yoursite.com/images/rsa.jpg",
+        "keywords": "",
+        "genre": "",
+        "datePublished": "2019-05-03",
+        "dateCreated": "2019-05-03",
+        "dateModified": "2019-12-30",
+        "url": "http://yoursite.com/2019/05/03/rsa/",
+        "description": "vue相关的rsa加密,项目需求,留作回顾.
 
 vue组件引入1import &#123; JSEncrypt &#125; from 'jsencrypt';
 
-方法内使用12345let publicKey = asdfsafdadfafasjdhfasfd // 从后台获取公钥，这里省略，直接赋值let encryptor = new JSEncrypt()  // 新建JSEncrypt对
-        </p>
-    </div>
+方法内使用12345let publicKey = asdfsafdadfafasjdhfasfd // 从后台获取公钥，这里省略，直接赋值let encryptor = new JSEncrypt()  // 新建JSEncrypt对",
+        "wordCount": 61
+    }
+</script>
+
 </article>
-    
 
-    
-    
-    
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/04/05/fenye/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/fenye.jpg)" alt="element翻页记忆" class="thumbnail-image"></span>
-    
+    <section id="comments">
     
         
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/04/05/fenye/">0</span>
-    
-</span>
-
-
-    
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-04-05T12:04:02.000Z" itemprop="datePublished">2019-04-05</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/04/05/fenye/">element翻页记忆</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            
-记忆翻页新需求，留作回顾。记录当前选中的分页中的列表，分页保存数据，然后在用选中的数据进行某些操作.
-效果展示
-HTML123456789101112131415161718&lt;!--table组件需要使用ref="table"--&gt;&lt;template&gt;    &lt;div&gt;        &lt;el-table :data="tableData" ref="ta
-        </p>
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
-</article>
-    
-        </div>
-    
-
-    
-    
-    
-    
-        <div class="article-row">
-    
-        <article class="article article-summary">
-    <div class="article-summary-inner">
-        
-        <a href="/2019/03/01/reClick/" class="thumbnail">
-    
-    
-        <span style="background-image:url(/images/reClick.jpg)" alt="reClick" class="thumbnail-image"></span>
-    
-    
-        
-<span class="comment-counter">
-    <i class="fa fa-comments-o"></i>
-    
-        <span class="disqus-comment-count" data-disqus-identifier="" data-disqus-url="http://yoursite.com/2019/03/01/reClick/">0</span>
-    
-</span>
 
 
     
-</a>
-
-        
-        <div class="article-meta">
-            <div class="category">
-            
-            </div>
-            <div class="date"><time datetime="2019-03-01T10:51:11.000Z" itemprop="datePublished">2019-03-01</time></div>
-        </div>
-        
-    
-        <h1 class="article-title" itemprop="name">
-        <a href="/2019/03/01/reClick/">reClick</a>
-        </h1>
-    
-
-        <p class="article-excerpt">
-            防止重复点击,或者点击过快方法.
-
-1.html123&lt;button type="button" data-num="0"&gt;00000&lt;/button&gt;&lt;button type="button" data-num="1"&gt;11111&lt;/button&gt;&lt;button type="button" data-num="2"&gt;22222&lt;/
-        </p>
-    </div>
-</article>
-    
-        </div>
-    
-
-
-    </div></section>
+    </section>
 
 
 
@@ -319,6 +305,19 @@ HTML123456789101112131415161718&lt;!--table组件需要使用ref="table"--&gt;&l
             
         </ul>
     </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2019/04/05/fenye/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">element翻页记忆</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
     
     <div class="widgets-container">
         
@@ -508,11 +507,13 @@ HTML123456789101112131415161718&lt;!--table组件需要使用ref="table"--&gt;&l
     var disqus_shortname = 'hexo-theme-hueman';
     
     
+    var disqus_url = 'http://yoursite.com/2019/05/03/rsa/';
+    
     (function() {
     var dsq = document.createElement('script');
     dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     })();
     </script>
